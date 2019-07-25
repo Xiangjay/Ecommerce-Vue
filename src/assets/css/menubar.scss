@@ -1,0 +1,45 @@
+$links-color:#666;
+
+header .menubar{
+  background: #f6f6f6;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  //position: absolute;
+
+  .menubar-left{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+
+    #logo{
+      margin-left: 20px;
+    }
+  }
+  .menubar-right{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+    .menubar-username{
+      margin-right: 20px;
+    }
+  }
+  .menubar-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menubar-links a{
+    color: $links-color;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 1.2rem;
+  }
+  .menubar-cart-logo{
+    transform: scaleX(-1);
+    width: 30px;
+    height: 30px;
+  }
+}

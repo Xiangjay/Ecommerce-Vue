@@ -1,0 +1,181 @@
+header .menubar {
+  background: #f6f6f6;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+}
+header .menubar .menubar-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+header .menubar .menubar-left #logo {
+  margin-left: 20px;
+}
+header .menubar .menubar-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+header .menubar .menubar-right .menubar-username {
+  margin-right: 20px;
+}
+header .menubar .menubar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .menubar .menubar-links a {
+  color: #666;
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+header .menubar .menubar-cart-logo {
+  transform: scaleX(-1);
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #f5f7fc;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+footer .footer-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+footer .footer-left span {
+  color: #ada9a5;
+  margin-left: 1.5em;
+}
+footer .footer-left a {
+  margin-left: 1.5em;
+}
+footer .footer-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+footer .footer-right span {
+  margin-right: 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fc;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.loginModule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.loginModule .error {
+  color: red;
+}
+.loginModule h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loginModule::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2ecc77;
+  opacity: 0.6;
+  z-index: -1;
+}
+.loginModule .login, .loginModule .alert, .loginModule .signup {
+  width: 600px;
+  background-color: #fff;
+  padding: 2rem 3rem;
+}
+.loginModule .login .errmsg, .loginModule .alert .errmsg, .loginModule .signup .errmsg {
+  color: red;
+}
+.loginModule .login .emailAvaiable, .loginModule .alert .emailAvaiable, .loginModule .signup .emailAvaiable {
+  color: #2ecc77 !important;
+}
+.loginModule .login h3, .loginModule .alert h3, .loginModule .signup h3 {
+  color: #27ae60;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.loginModule .login form input, .loginModule .alert form input, .loginModule .signup form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+}
+.loginModule .login form input:last-child, .loginModule .alert form input:last-child, .loginModule .signup form input:last-child {
+  color: #fff;
+  background-color: #27ae60;
+}
+.loginModule .login form input:last-child:hover, .loginModule .alert form input:last-child:hover, .loginModule .signup form input:last-child:hover {
+  background-color: #2ecc77;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.loginModule .login form input:focus, .loginModule .alert form input:focus, .loginModule .signup form input:focus {
+  outline: 1px solid #2ecc77;
+}
+.loginModule ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.loginModule ul li a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+}
+.loginModule ul li a:hover {
+  color: #2ecc77;
+  border-bottom: 1px solid #2ecc77;
+}
+
+.alert {
+  color: #fff;
+  background-color: #000;
+}
+.alert a {
+  color: green;
+}
+
+/*# sourceMappingURL=home.css.map */

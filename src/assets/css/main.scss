@@ -1,0 +1,23 @@
+@import "menubar";
+@import "footer";
+$main-color:#2ecc77;
+$second-color:#27ae60;
+$border-color:#ddd;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f5f7fc;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}

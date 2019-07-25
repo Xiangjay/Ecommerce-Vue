@@ -1,0 +1,108 @@
+$main-color:#2ecc77;
+$second-color:#27ae60;
+$border-color:#ddd;
+@import "main";
+
+.loginModule{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  .error{
+    color: red;
+  }
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $main-color;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  .login, .signup{
+    width: 600px;
+    background-color: #fff;
+    padding: 2rem 3rem;
+
+    .errmsg{
+      color:red;
+    }
+
+    .emailAvaiable{
+      color:$main-color !important;
+    }
+
+    h3{
+      color: $second-color;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    form input{
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid $border-color;
+
+      &:last-child{
+        color: #fff;
+        background-color: $second-color;
+
+        &:hover{
+          background-color: $main-color;
+          transition: all 0.5s;
+          cursor: pointer;
+        }
+      }
+
+      &:focus{
+        outline: 1px solid $main-color;
+      }
+    }
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    li a{
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s;
+
+      &:hover{
+        color: $main-color;
+        border-bottom: 1px solid $main-color;
+      }
+    }
+  }
+}
+
+@mixin warning($text-color, $bgcolor){    //定义函数，可带参数
+  color:$text-color;
+  background-color: $bgcolor;
+  a{
+    color:green;
+  }
+}
+
+.alert{
+  @include warning(#fff, #000);
+  //@include warning($bgcolor:#000, $text-color:#fff);    //这种写法可以不管参数顺序
+  @extend .login;    //继承样式，然后再继续写自己的样式
+}
+
+//@import "base";    //导入其他scss，可以看成模块化，注意命名

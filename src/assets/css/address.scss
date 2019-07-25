@@ -1,0 +1,170 @@
+@import "main";
+
+ul {
+  list-style: none;
+}
+
+.addresslist {
+  padding: 10px 10px 0;
+
+  h2 {
+    padding: 20px 0;
+    color: #605F5F;
+    letter-spacing: 0.25em;
+    font-weight: bold;
+  }
+
+  .check-step {
+    padding: 30px 0 20px;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li.select {
+        color: #d1434a;
+        border-color: #d1434a;
+
+        &::after {
+          background-color: #d1434a;
+        }
+      }
+
+      li {
+        position: relative;
+        float: left;
+        flex: 1;
+        width: 25%;
+        line-height: 1.25em;
+        padding: 0 1em 1.25em;
+        border-bottom: 2px solid #ccc;
+        color: #999;
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        &::after {
+          position: absolute;
+          bottom: -7px;
+          left: 50%;
+          margin-left: -7px;
+          content: "";
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+
+  .address-list-wrap {
+    min-height: 200px;
+    li {
+      position: relative;
+      float: left;
+      width: 23%;
+      height: 160px;
+      margin: 0 1.587% 1.587% 0;
+      padding: 20px 20px 40px;
+      background-color: #fff;
+      border: 2px solid #e9e9e9;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover {
+        border-color: #ee7a23;
+        border-width: 2px;
+      }
+
+      .address-mail-name {
+        line-height: 1em;
+        padding: 0 25px 10px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .address-mail-address {
+        height: 2.8em;
+        overflow: hidden;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+
+      .address-setdefault {
+        position: absolute;
+        color: #ee7a23;
+        left: 20px;
+        bottom: 10px;
+        display: block;
+
+        a {
+          color: #ee7a23;
+        }
+      }
+
+      .address-del {
+        position: absolute;
+        right: 20px;
+        bottom: 17px;
+        width: 20px;
+        height: 20px;
+        display: block;
+
+        .icon-del {
+          width: 100%;
+          height: 100%;
+          fill: #605F5F;
+
+          &:hover {
+            fill: #ee7a23;
+          }
+        }
+      }
+    }
+
+    li.select {
+      border-color: #ee7a23;
+      border-width: 2px;
+    }
+
+    li.address-new {
+      color: #605F5F;
+      text-align: center;
+
+      .address-new-content {
+        padding-top: 20px;
+
+        .icon-add {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          fill: #605F5F;
+        }
+      }
+    }
+  }
+  .next-btn-wrap{
+    float: right;
+    .btn{
+      margin-top: 15px;
+      width: 200px;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      border: 1px solid #d1434a;
+      color: #d1434a;
+      letter-spacing: .25em;
+      white-space: nowrap;
+      height: 40px;
+      line-height: 40px;
+      &:hover{
+        background-color: #d1434a;
+      	border-color: #d1434a;
+      	color: #fff;
+      }
+    }
+  }
+}

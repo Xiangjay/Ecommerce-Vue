@@ -1,0 +1,97 @@
+header .menubar {
+  background: #f6f6f6;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+}
+header .menubar .menubar-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+header .menubar .menubar-left #logo {
+  margin-left: 20px;
+}
+header .menubar .menubar-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+header .menubar .menubar-right .menubar-username {
+  margin-right: 20px;
+}
+header .menubar .menubar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .menubar .menubar-links a {
+  color: #666;
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+header .menubar .menubar-cart-logo {
+  transform: scaleX(-1);
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #f5f7fc;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+footer .footer-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+footer .footer-left span {
+  color: #ada9a5;
+  margin-left: 1.5em;
+}
+footer .footer-left a {
+  margin-left: 1.5em;
+}
+footer .footer-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+footer .footer-right span {
+  margin-right: 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fc;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

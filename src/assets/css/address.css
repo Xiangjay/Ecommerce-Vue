@@ -1,0 +1,246 @@
+header .menubar {
+  background: #f6f6f6;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+}
+header .menubar .menubar-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+header .menubar .menubar-left #logo {
+  margin-left: 20px;
+}
+header .menubar .menubar-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+header .menubar .menubar-right .menubar-username {
+  margin-right: 20px;
+}
+header .menubar .menubar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .menubar .menubar-links a {
+  color: #666;
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+header .menubar .menubar-cart-logo {
+  transform: scaleX(-1);
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #f5f7fc;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+footer .footer-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+footer .footer-left span {
+  color: #ada9a5;
+  margin-left: 1.5em;
+}
+footer .footer-left a {
+  margin-left: 1.5em;
+}
+footer .footer-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+footer .footer-right span {
+  margin-right: 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fc;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.addresslist {
+  padding: 10px 10px 0;
+}
+.addresslist h2 {
+  padding: 20px 0;
+  color: #605F5F;
+  letter-spacing: 0.25em;
+  font-weight: bold;
+}
+.addresslist .check-step {
+  padding: 30px 0 20px;
+}
+.addresslist .check-step ul {
+  display: flex;
+  list-style: none;
+}
+.addresslist .check-step ul li.select {
+  color: #d1434a;
+  border-color: #d1434a;
+}
+.addresslist .check-step ul li.select::after {
+  background-color: #d1434a;
+}
+.addresslist .check-step ul li {
+  position: relative;
+  float: left;
+  flex: 1;
+  width: 25%;
+  line-height: 1.25em;
+  padding: 0 1em 1.25em;
+  border-bottom: 2px solid #ccc;
+  color: #999;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.addresslist .check-step ul li::after {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -7px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.addresslist .address-list-wrap {
+  min-height: 200px;
+}
+.addresslist .address-list-wrap li {
+  position: relative;
+  float: left;
+  width: 23%;
+  height: 160px;
+  margin: 0 1.587% 1.587% 0;
+  padding: 20px 20px 40px;
+  background-color: #fff;
+  border: 2px solid #e9e9e9;
+  overflow: hidden;
+  cursor: pointer;
+}
+.addresslist .address-list-wrap li:hover {
+  border-color: #ee7a23;
+  border-width: 2px;
+}
+.addresslist .address-list-wrap li .address-mail-name {
+  line-height: 1em;
+  padding: 0 25px 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.addresslist .address-list-wrap li .address-mail-address {
+  height: 2.8em;
+  overflow: hidden;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.addresslist .address-list-wrap li .address-setdefault {
+  position: absolute;
+  color: #ee7a23;
+  left: 20px;
+  bottom: 10px;
+  display: block;
+}
+.addresslist .address-list-wrap li .address-setdefault a {
+  color: #ee7a23;
+}
+.addresslist .address-list-wrap li .address-del {
+  position: absolute;
+  right: 20px;
+  bottom: 17px;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.addresslist .address-list-wrap li .address-del .icon-del {
+  width: 100%;
+  height: 100%;
+  fill: #605F5F;
+}
+.addresslist .address-list-wrap li .address-del .icon-del:hover {
+  fill: #ee7a23;
+}
+.addresslist .address-list-wrap li.select {
+  border-color: #ee7a23;
+  border-width: 2px;
+}
+.addresslist .address-list-wrap li.address-new {
+  color: #605F5F;
+  text-align: center;
+}
+.addresslist .address-list-wrap li.address-new .address-new-content {
+  padding-top: 20px;
+}
+.addresslist .address-list-wrap li.address-new .address-new-content .icon-add {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  fill: #605F5F;
+}
+.addresslist .next-btn-wrap {
+  float: right;
+}
+.addresslist .next-btn-wrap .btn {
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #d1434a;
+  color: #d1434a;
+  letter-spacing: 0.25em;
+  white-space: nowrap;
+  height: 40px;
+  line-height: 40px;
+}
+.addresslist .next-btn-wrap .btn:hover {
+  background-color: #d1434a;
+  border-color: #d1434a;
+  color: #fff;
+}
+
+/*# sourceMappingURL=address.css.map */

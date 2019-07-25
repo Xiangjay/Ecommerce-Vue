@@ -1,0 +1,84 @@
+@import "main";
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  z-index: 999;
+  text-align: center;
+
+  .overlay-top {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 34px;
+    height: 34px;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    text-indent: -8000px;
+
+    .overlay-close {
+      &::after,
+      &::before {
+        position: absolute;
+        top: 16px;
+        left: -4px;
+        content: "";
+        width: 44px;
+        height: 3px;
+        background: #d7d8dd;
+        -webkit-transition: -webkit-transform 0.5s ease-out;
+        transition: -webkit-transform 0.5s ease-out;
+        transition: transform 0.5s ease-out;
+        transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+        cursor: pointer;
+      }
+
+      &::after {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      &:hover{
+        background: #d1434a;
+      }
+    }
+  }
+  .overlay-content{
+    width: 80%;
+  }
+  .btn{
+    width: 30%;
+  }
+}
+.overlay-show{
+  visibility: visible;
+}
+.overlay-shandow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 200;
+}
+.icon-status-ok {
+  width: 20px;
+  height: 20px;
+  fill: #ee7a23;
+  vertical-align: middle;
+  margin-right: 15px;
+}

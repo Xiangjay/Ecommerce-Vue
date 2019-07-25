@@ -1,0 +1,34 @@
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #f5f7fc;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+footer .footer-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+footer .footer-left span {
+  color: #ada9a5;
+  margin-left: 1.5em;
+}
+footer .footer-left a {
+  margin-left: 1.5em;
+}
+footer .footer-right {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+}
+footer .footer-right span {
+  margin-right: 1.5em;
+}
+
+/*# sourceMappingURL=footer.css.map */
