@@ -14,7 +14,7 @@
 
 ``` bash
 
-1. install dependencies -- npm install
+1. 安装依赖 -- npm install
 2. 通过 mongorestore 或者 mongoimport 把数据导入到数据库，然后修改 ./server/routers/users.js， 确保数据库连接正确。
 3. 启动 mongoDB
 4. 启动后台 node 服务 -- cd ./server, node bin/www
